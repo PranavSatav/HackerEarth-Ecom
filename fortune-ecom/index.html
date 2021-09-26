@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- molla/index-8.html  22 Nov 2019 09:56:59 GMT -->
+<head>
+<style>
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+display: none;}
+@import url(//fonts.googleapis.com/css?family=Raleway:300,700);
+#side-popup {
+  background: #fff;
+  border: 0;
+  display: block;
+  margin-left: 0;
+  border-radius: 10px;
+  bottom: 80%;
+  left: 20px;
+  top: auto !important;
+  right: auto !important;
+  padding: 0;
+  position: fixed;
+  text-align: left;
+  width: auto;
+  z-index: 99999;
+  font-family: "Open Sans";
+  font-weight: 400;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #FFB740;
+  border-width: 0 0 0 10px;
+  padding-right: 25px;
+}
+#side-popup img {
+  cursor: pointer;
+  float: left;
+  max-height: 85px;
+  max-width: 120px;
+  width: auto;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+#side-popup p {
+  color: #444;
+  float: left;
+  font-size: 13px;
+  margin: 0 0 0 13px;
+  width: auto;
+  padding: 10px 10px 0 0;
+  line-height: 20px;
+}
+#side-popup p a {
+  color: #FF4C29;
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: transparent;
+}
+#side-popup p small {
+  display: block;
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+#side-popup #side-popup-close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0.2;
+  background: url(https://s3.amazonaws.com/fomo-static-assets/close.png);
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+}
+#side-popup #side-popup-close:hover {
+  opacity: 1;
+}
+#side-popup.fade-in {
+  opacity: 0;
+  animation-name: nFadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+#side-popup.fade-out {
+  opacity: 0;
+  animation-name: nFadeOut;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes nFadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes nFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@media screen and (max-width: 767px) {
+  @keyframes nFadeIn {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  #side-popup {
+    top: auto !important;
+    right: auto !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: auto !important;
+    margin-left: 0;
+    height: auto;
+    padding: 0;
+    text-align: left;
+    border-radius: 0px;
+  }
+  #side-popup.fade-in {
+    opacity: 0;
+    animation-name: nFadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  #side-popup.fade-out {
+    opacity: 0;
+    animation-name: nFadeOut;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  #side-popup img {
+    max-width: 20%;
+    max-height: auto;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0px;
+  }
+  #side-popup p {
+    font-size: 11px;
+    width: 70%;
+    float: left;
+    margin: 0 0 0 13px;
+    padding: 10px 10px 0 0;
+  }
+  #side-popup p a {
+    font-size: 13px;
+    height: auto;
+    width: auto;
+    margin-left: 0px;
+    float: none;
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+  @keyframes nFadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+      bottom: 0;
+    }
+  }
+}
+@keyframes flip {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: perspective(400px) translate3d(0, 1, 0px) rotate3d(0, 1, 0, 180deg);
+    animation-timing-function: ease-in;
+  }
+  to {
+    transform: perspective(400px) rotate3d(0, 1, 0, 360deg);
+    animation-timing-function: ease-in;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Varela+Round&display=swap');
+
+body {
+  font-family: "Tajawal", Arial;
+}
+
+.pad {
+   
+    text-align:center;
+}
+body {
+    background: #fbfbfd;
+}
+
+.new_footer_area {
+    background: #fbfbfd;
+}
+
+
+.new_footer_top {
+    padding: 120px 0px 270px;
+    position: relative;
+      overflow-x: hidden;
+}
+.new_footer_area .footer_bottom {
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+.footer_bottom {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #7f88a6;
+    padding: 27px 0px;
+}
+.new_footer_top .company_widget p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #6a7695;
+    margin-bottom: 20px;
+}
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+    border-width: 1px;
+    margin-top: 20px;
+}
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+}
+.btn_get:hover {
+    color: #fff;
+    background: #6754e2;
+    border-color: #6754e2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+.new_footer_top .f_widget.about-widget .f_list li a:hover {
+    color: #5e2ced;
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+    margin-bottom: 11px;
+}
+.f_widget.about-widget .f_list li:last-child {
+    margin-bottom: 0px;
+}
+.f_widget.about-widget .f_list li {
+    margin-bottom: 15px;
+}
+.f_widget.about-widget .f_list {
+    margin-bottom: 0px;
+}
+.new_footer_top .f_social_icon a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: transparent;
+    border: 1px solid #e2e2eb;
+    font-size: 24px;
+}
+.f_social_icon a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 45px;
+    color: #858da8;
+    display: inline-block;
+    background: #ebeef5;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.ti-facebook:before {
+    content: "\e741";
+}
+.ti-twitter-alt:before {
+    content: "\e74b";
+}
+.ti-vimeo-alt:before {
+    content: "\e74a";
+}
+.ti-pinterest:before {
+    content: "\e731";
+}
+
+.btn_get_two {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #5e2ced;
+    border-color: #5e2ced;
+    color: #fff;
+}
+
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+}
+
+.new_footer_top .f_social_icon a:hover {
+    background: #5e2ced;
+    border-color: #5e2ced;
+  color:white;
+}
+.new_footer_top .f_social_icon a + a {
+    margin-left: 4px;
+}
+.new_footer_top .f-title {
+    margin-bottom: 30px;
+    color: #263b5e;
+}
+.f_600 {
+    font-weight: 600;
+}
+.f_size_18 {
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #4b505e;
+}
+.new_footer_top .f_widget.about-widget .f_list li a {
+    color: #6a7695;
+}
+
+
+.new_footer_top .footer_bg {
+    position: absolute;
+    bottom: 0;
+    background: url("https://i.imgur.com/AWl2n94.png ") no-repeat scroll center 0;
+    width: 100%;
+    height: 266px;
+}
+
+.new_footer_top .footer_bg .footer_bg_one {
+    background: url("") no-repeat center center;
+    width: 330px;
+    height: 105px;
+  background-size:100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+    background: url("") no-repeat center center;
+    width: 88px;
+    height: 100px;
+  background-size:100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
+}
+
+
+
+@-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/*************footer End*****************/
+
+    * {
+  padding: 10;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+.marquee__inner {
+  display: flex;
+}
+.marquee__inner h1 {
+  padding-left: 310px;
+  font-size: 2.0vw;
+  white-space: nowrap;
+  letter-spacing:1px;
+  animation: kf-marquee 40s linear infinite;
+  
+  color: #000;
+  transition: color 0.3s linear;
+}
+.marquee__inner h1 {
+  color: #FF4C29;
+}
+
+@keyframes kf-marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.left {
+    margin-right:50%;
+
+}
+.bgtext {
+    margin: 0;
+    padding: 0;
+    background: url(https://i.imgur.com/EQTwNwg.png) top center;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top:30px;
+   font: bold 20px Arial; 
+}
+/* COLORS
+========================================== */
+/* MIXINS
+========================================== */
+/* KEYFRAMES
+========================================== */
+@-webkit-keyframes float {
+  0% {
+    transform: translatey(0px);
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatey(-30px);
+    transform: translatex(20px);
+  }
+  100% {
+    transform: translatey(0px);
+    transform: translatex(0px);
+  }
+}
+@-moz-keyframes float {
+  0% {
+    transform: translatey(0px);
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatey(-30px);
+    transform: translatex(20px);
+  }
+  100% {
+    transform: translatey(0px);
+    transform: translatex(0px);
+  }
+}
+@-o-keyframes float {
+  0% {
+    transform: translatey(0px);
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatey(-30px);
+    transform: translatex(20px);
+  }
+  100% {
+    transform: translatey(0px);
+    transform: translatex(0px);
+  }
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatey(-30px);
+    transform: translatex(20px);
+  }
+  100% {
+    transform: translatey(0px);
+    transform: translatex(0px);
+  }
+}
+/* RESET
+========================================== */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #3e4146;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* BUTTON
+========================================== */
+.button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.button button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: inherit;
+  background-color: #ffffff;
+  border: 0;
+  padding: 15px 25px;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 21px;
+  letter-spacing: 1px;
+  width: 200px;
+  overflow: hidden;
+  outline: 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  visibility: visible;
+  opacity: 1;
+  font-weight: bold;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.6);
+}
+.button button:hover {
+  cursor: pointer;
+  background-color: #8e6ac1;
+  color: #ffffff;
+}
+.button button span {
+  opacity: 1;
+}
+.button.clicked button {
+  visibility: hidden;
+  oacity: 0;
+}
+
+/* POP-UP
+========================================== */
+.pop-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+  -moz-transform: translate(-50%, -50%) scale(0.9);
+  -ms-transform: translate(-50%, -50%) scale(0.9);
+  -o-transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.9);
+  overflow-y: auto;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 10;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .pop-up {
+    width: calc(100% - 40px);
+    height: auto;
+    max-width: 900px;
+  }
+}
+.pop-up .content {
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+@media (min-width: 768px) {
+  .pop-up .content {
+    min-height: inherit;
+  }
+}
+.pop-up .content .container {
+  padding: 100px 20px 140px;
+}
+@media (min-width: 568px) {
+  .pop-up .content .container {
+    padding: 50px 20px 80px;
+  }
+}
+@media (min-width: 768px) {
+  .pop-up .content .container {
+    padding: 70px 0px 90px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+.pop-up .content .close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  color: #3e4146;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.pop-up .content .close:hover {
+  cursor: pointer;
+  color: #f66867;
+}
+.pop-up .content .dots .dot {
+  position: absolute;
+  border-radius: 100%;
+  z-index: 11;
+}
+.pop-up .content .dots .dot:nth-of-type(1) {
+  top: -80px;
+  right: -80px;
+  width: 160px;
+  height: 160px;
+  background-color: #689bf6;
+  -webkit-animation: float 6s ease-in-out infinite;
+  -moz-animation: float 6s ease-in-out infinite;
+  -o-animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
+}
+@media (min-width: 768px) {
+  .pop-up .content .dots .dot:nth-of-type(1) {
+    top: -190px;
+    right: -190px;
+    width: 380px;
+    height: 380px;
+  }
+}
+.pop-up .content .dots .dot:nth-of-type(2) {
+  bottom: -120px;
+  left: -120px;
+  width: 240px;
+  height: 240px;
+  background-color: #f66867;
+  -webkit-animation: float 8s ease-in-out infinite;
+  -moz-animation: float 8s ease-in-out infinite;
+  -o-animation: float 8s ease-in-out infinite;
+  animation: float 8s ease-in-out infinite;
+}
+.pop-up .content .dots .dot:nth-of-type(3) {
+  bottom: -50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  background-color: #ffd84c;
+  -webkit-animation: float 4s ease-in-out infinite;
+  -moz-animation: float 4s ease-in-out infinite;
+  -o-animation: float 4s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
+}
+.pop-up .content .title h1 {
+  text-align: center;
+  color: #f66867;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.8rem;
+  letter-spacing: 0.05rem;
+}
+.pop-up .content img {
+  width: 100%;
+  max-width: 220px;
+  display: inline-block;
+  margin: 30px 0 40px 0;
+  opacity: 0;
+  -webkit-transform: translateX(60px);
+  -moz-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  -o-transform: translateX(60px);
+  transform: translateX(60px);
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-backface-visibility: hidden;
+}
+@media (min-width: 768px) {
+  .pop-up .content img {
+    max-width: 300px;
+  }
+}
+.pop-up .content .subscribe h1 {
+  font-size: 1.5rem;
+  color: #3e4146;
+  line-height: 130%;
+  letter-spacing: 0.07rem;
+  margin-bottom: 30px;
+}
+.pop-up .content .subscribe h1 span {
+  color: #f66867;
+}
+.pop-up .content .subscribe form {
+  overflow: hidden;
+}
+.pop-up .content .subscribe form input {
+  width: 100%;
+  float: left;
+  padding: 15px 20px;
+  text-align: center;
+  font-family: inherit;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  outline: 0;
+}
+.pop-up .content .subscribe form input[type=email] {
+  margin-bottom: 15px;
+  border: 1px solid #bec1c5;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+@media (min-width: 768px) {
+  .pop-up .content .subscribe form input[type=email] {
+    margin-bottom: 0px;
+    width: 75%;
+    border-right-width: 0px;
+  }
+}
+.pop-up .content .subscribe form input[type=email]:focus {
+  border-color: #3e4146;
+}
+.pop-up .content .subscribe form input[type=submit] {
+  background-color: #8e6ac1;
+  color: #ffffff;
+  border: 1px solid #8e6ac1;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+@media (min-width: 768px) {
+  .pop-up .content .subscribe form input[type=submit] {
+    width: 25%;
+  }
+}
+.pop-up .content .subscribe form input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #7349af;
+  border-color: #7349af;
+}
+.pop-up.open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -moz-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  -o-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+.pop-up.open img {
+  opacity: 1;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+}
+.buttonz {
+   border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+.start {
+      background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+   
+   
+   <!--
+  
+
+    
+   
+   -->
+   
+   
+   
+    <!-- Plugins CSS File -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/jquery.countdown.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="assets/css/skins/skin-demo-8.css">
+    <link rel="stylesheet" href="assets/css/demos/demo-8.css">
+        <link rel="stylesheet" href="assets/css/skins/skin-demo-4.css">
+    <link rel="stylesheet" href="assets/css/demos/demo-4.css">
+
+  
+
+
+   
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="header-bottom sticky-header">
+                <br/>
+               <div class="marquee">
+  <div class="marquee__inner">
+    <h1>
+      Explore Wide Range of Sustainable Products Across the Site &nbsp;&nbsp;  &nbsp;&nbsp;
+      Get Upto 60% Off on Selected Items &nbsp;&nbsp;  &nbsp;&nbsp;
+      Feature Your Own Collection! &nbsp;&nbsp;  &nbsp;&nbsp;
+      Achieve Sustainability &nbsp;&nbsp;  &nbsp;&nbsp;
+      Wide Range of Furnitures Available! &nbsp;&nbsp;  &nbsp;&nbsp;
+      Daily Restocks  &nbsp;&nbsp;  &nbsp;&nbsp;
+      Clearance Sales Every Month  &nbsp;&nbsp;  &nbsp;&nbsp;
+    </h1>
+  </div>
+</div>
+            <!-- End .header-bottom -->
+        </header><!-- End .header -->
+
+        <main class="main">
+         
+
+<div class="pop-up">
+  <div class="content">
+    <div class="container">
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      
+     <a href="https://ikshanamit.000webhostapp.com/index-8.html"> <span class="close">close</span>
+</a>      
+
+    <button class="start">
+      Turn On Voice &nbsp;<i class="fa fa-comments"></i>
+    </button>
+
+    <div class="container">
+      <i class="fa fa-microphone fa-3x"></i>
+     
+      <h3 class="command"></h3>
+
+      <h5>Try Saying..</h5>
+      <ul>
+        <li>What is your name?</li>
+        <li>Show me some rice</li>
+        <li>My name is &lt;your-name&gt;</li>
+        <li>What time is it?</li>
+        <li>Search for &lt;your-query&gt;</li>
+        <li>Who is your creator?</li>
+        <li>Who is your favourite YouTube creator?</li>
+        <li>Bye</li>
+      </ul>
+     
+    </div>
+
+    
+    </div>
+  </div>
+</div>
+<main class="main">
+            <div class="intro-slider-container mb-5">
+                <div class="intro-slider owl-carousel owl-theme owl-nav-inside owl-light" data-toggle="owl" 
+                    data-owl-options='{
+                        "dots": true,
+                        "nav": false, 
+                        "responsive": {
+                            "1200": {
+                                "nav": true,
+                                "dots": false
+                            }
+                        }
+                    }'>
+                    
+                       <div class="intro-slide" style="background-image: url(https://i.imgur.com/e0C15Wj.jpg);">
+                        <div class="container intro-content">
+                            <div class="row justify-content-end">
+                                <div class="col-auto col-sm-7 col-md-6 col-lg-5">
+                                   
+                                   
+<div class="intro-price">
+                                        
+                                      <!--  <img class="left" src="https://i.imgur.com/2Fz37TE.png"/> -->
+                                    </div><!-- End .intro-price -->
+                                    
+
+                                   
+                                </div><!-- End .col-lg-11 offset-lg-1 -->
+                            </div><!-- End .row -->
+                        </div><!-- End .intro-content -->
+                    </div><!-- End .intro-slide -->
+                    <div class="intro-slide" style="background-image: url(https://i.imgur.com/bdKytC0.png);">
+                        <div class="container intro-content">
+                            <div class="row justify-content-end">
+                                <div class="col-auto col-sm-7 col-md-6 col-lg-5">
+                                    <h3 class="intro-subtitle text-third">Fortune Oil</h3><!-- End .h3 intro-subtitle -->
+                                    <h1 class="intro-title">Premium </h1>
+                                    <h1 class="intro-title">Oil Pack Of 2</h1><!-- End .intro-title -->
+
+                                    <div class="intro-price">
+                                        <sup class="intro-old-price">Rs 200/-</sup>
+                                        <span class="text-third">
+                                            Rs 300/-<sup></sup>
+                                        </span>
+                                    </div><!-- End .intro-price -->
+
+                                    <a href="" class="btn btn-primary btn-round">
+                                        <span>Shop More</span>
+                                        <i class="icon-long-arrow-right"></i>
+                                    </a>
+                                </div><!-- End .col-lg-11 offset-lg-1 -->
+                            </div><!-- End .row -->
+                        </div><!-- End .intro-content -->
+                    </div><!-- End .intro-slide -->
+
+                    <div class="intro-slide" style="background-image: url(https://i.imgur.com/gnAfRel.png);">
+                        <div class="container intro-content">
+                            <div class="row justify-content-end">
+                                <div class="col-auto col-sm-7 col-md-6 col-lg-5">
+                                    <h3 class="intro-subtitle text-primary">New Arrival</h3><!-- End .h3 intro-subtitle -->
+                                    <h1 class="intro-title">Basmati Rice <br>Everyday Pack </h1><!-- End .intro-title -->
+
+                                    <div class="intro-price">
+                                        <sup>Today :</sup>
+                                        <span class="text-primary">
+                                            Rs 999 /-
+                                        </span>
+                                    </div><!-- End .intro-price -->
+
+                                    <a href="" class="btn btn-primary btn-round">
+                                        <span>Shop More</span>
+                                        <i class="icon-long-arrow-right"></i>
+                                    </a>
+                                </div><!-- End .col-md-6 offset-md-6 -->
+                            </div><!-- End .row -->
+                        </div><!-- End .intro-content -->
+                    </div><!-- End .intro-slide -->
+                </div><!-- End .intro-slider owl-carousel owl-simple -->
+
+                <span class="slider-loader"></span><!-- End .slider-loader -->
+            </div><!-- End .intro-slider-container -->
+           
+</main>
+  <div class="container">
+                <h2 class="title text-center mb-2">Explore Popular Categories</h2><!-- End .title -->
+<br/>
+                <div class="cat-blocks-container">
+                    <div class="row">
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a href="" class="cat-block">
+                                <figure>
+                                    <span>
+                                        <img src="https://i.imgur.com/tVVvbx4.png" alt="Category image">
+                                    </span>
+                                </figure>
+
+                                 <h3 class="about-hd3 bgtext">Oil</h3><!-- End .cat-block-title -->
+                            </a>
+                        </div><!-- End .col-sm-4 col-lg-2 -->
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a href="" class="cat-block">
+                                <figure>
+                                    <span>
+                                        <img src="https://i.imgur.com/xvpnct1.png" alt="Category image">
+                                    </span>
+                                </figure>
+
+                                 <h3 class="about-hd3 bgtext">Atta</h3><!-- End .cat-block-title -->
+                            </a>
+                        </div><!-- End .col-sm-4 col-lg-2 -->
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a href="" class="cat-block">
+                                <figure>
+                                    <span>
+                                        <img src="https://i.imgur.com/i2VLsLq.png" alt="Category image">
+                                    </span>
+                                </figure>
+
+                                <h3 class="about-hd3 bgtext">Rice</h3><!-- End .cat-block-title -->
+                            </a>
+                        </div><!-- End .col-sm-4 col-lg-2 -->
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a href="" class="cat-block">
+                                <figure>
+                                    <span>
+                                        <img src="https://i.imgur.com/9T5DA6j.png" alt="Category image">
+                                    </span>
+                                </figure>
+
+                                <h3 class="about-hd3 bgtext">Besan</h3><!-- End .cat-block-title -->
+                            </a>
+                        </div><!-- End .col-sm-4 col-lg-2 -->
+
+                       <div class="col-6 col-sm-4 col-lg-2">
+                            <a href="" class="cat-block">
+                                <figure>
+                                    <span>
+                                        <img src="https://i.imgur.com/qG4u9VX.png" alt="Category image">
+                                    </span>
+                                </figure>
+
+                                <h3 class="about-hd3 bgtext">Suji</h3><!-- End .cat-block-title -->
+                            </a>
+                        </div> 
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a href="" class="cat-block">
+                                <figure>
+                                    <span>
+                                        <img src="https://i.imgur.com/u32oyWS.pngg" alt="Category image">
+                                    </span>
+                                </figure>
+
+                                 <h3 class="about-hd3 bgtext">Sanitizer</h3><!-- End .cat-block-title -->
+                            </a>
+                        </div><!-- End .col-sm-4 col-lg-2 -->
+                    </div><!-- End .row -->
+                </div><!-- End .cat-blocks-container -->
+            </div><!-- End .container -->
+                 <div class="mb-4"></div><!-- End .mb-4 -->
+
+  <div class="mb-4"></div><!-- End .mb-4 -->
+<center><img src="https://i.imgur.com/lSqsQmM.png" width="100%"/></center>
+  <div class="mb-4"></div><!-- End .mb-4 -->  <div class="mb-4"></div><!-- End .mb-4 -->
+
+ <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="banner banner-overlay">
+                            <a href="#">
+                                <img src="https://i.imgur.com/llV9TWv.jpg" alt="Banner">
+                            </a>
+
+                            <div class="banner-content">
+                                <h4 class="banner-subtitle text-white"><a href="#">Soaps</a></h4><!-- End .banner-subtitle -->
+                                <h3 class="banner-title text-black"><a href="#">Alife Soaps <br><span>25% off</span></a></h3><!-- End .banner-title -->
+                                
+                            </div><!-- End .banner-content -->
+                        </div><!-- End .banner -->
+                    </div><!-- End .col-lg-3 -->
+
+                    <div class="col-sm-6 col-lg-3 order-lg-last">
+                        <div class="banner banner-overlay">
+                            <a href="#">
+                                <img src="https://i.imgur.com/Q4aKXv1.jpg" alt="Banner">
+                            </a>
+
+                            <div class="banner-content">
+                                <h4 class="banner-subtitle text-white"><a href="#">Smart Offer</a></h4><!-- End .banner-subtitle -->
+                                <h3 class="banner-title text-white "><a href="#">Sugar<br><span>15% off</span></a></h3><!-- End .banner-title -->
+                               
+                            </div><!-- End .banner-content -->
+                        </div><!-- End .banner -->
+                    </div><!-- End .col-lg-3 -->
+
+                    <div class="col-lg-6">
+                        <div class="banner banner-overlay">
+                            <a href="products.html">
+                                <img src="https://i.imgur.com/4czizrr.jpg" alt="Banner">
+                            </a>
+
+                            <div class="banner-content">
+                                <h4 class="banner-subtitle text-white d-none d-sm-block"><a href="https://ikshanamit.000webhostapp.com/products.html#">Amazing Value</a></h4><!-- End .banner-subtitle -->
+                                <h3 class="banner-title text-black ">Oil Can <br>(Fortune) 1 Litres <br><span>from $12,99</span></h3><!-- End .banner-title -->
+                               
+                            </div><!-- End .banner-content -->
+                        </div><!-- End .banner -->
+                    </div><!-- End .col-lg-6 -->
+                </div><!-- End .row -->
+            </div><!-- End .container -->
+             <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="banner banner-overlay banner-overlay-light">
+                            <a href="#">
+                                <img src="https://i.imgur.com/2DbCpaD.jpg" alt="Banner">
+                            </a>
+
+                            <div class="banner-content">
+                                <h4 class="banner-subtitle d-none d-sm-block "><a href="#">Spring Sale is Coming</a></h4><!-- End .banner-subtitle -->
+                                <h3 class="banner-title bgtext">Fortune Khichdi <br>Discount <br></h3><!-- End .banner-title -->
+                                
+                            </div><!-- End .banner-content -->
+                        </div><!-- End .banner -->
+                    </div><!-- End .col-lg-6 -->
+
+                    <div class="col-lg-6">
+                        <div class="banner banner-overlay">
+                            <a href="#">
+                                <img src="https://i.imgur.com/IoGEWO5.png" alt="Banner">
+                            </a>
+
+                            <div class="banner-content">
+                                <h4 class="banner-subtitle text-white  d-none d-sm-block"><a href="#">Amazing Value</a></h4><!-- End .banner-subtitle -->
+                                <h3 class="banner-title text-white"><a href="#">Fortune <br>Soya Chunkies <br><span>from $59,99</span></a></h3><!-- End .banner-title -->
+                               
+                            </div><!-- End .banner-content -->
+                        </div><!-- End .banner -->
+                    </div><!-- End .col-lg-6 -->
+                </div><!-- End .row -->
+            </div><!-- End .container -->
+   <div class="icon-boxes-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="icon-box icon-box-side">
+                                    <span class="icon-box-icon">
+                                        <i class="icon-rocket"></i>
+                                    </span>
+
+                                    <div class="icon-box-content">
+                                        <h3 class="icon-box-title">Free Shipping</h3><!-- End .icon-box-title -->
+                                        <p>Orders 50Rs/- or more</p>
+                                    </div><!-- End .icon-box-content -->
+                                </div><!-- End .icon-box -->
+                            </div><!-- End .col-sm-6 col-lg-3 -->
+                            
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="icon-box icon-box-side">
+                                    <span class="icon-box-icon">
+                                        <i class="icon-rotate-left"></i>
+                                    </span>
+
+                                    <div class="icon-box-content">
+                                        <h3 class="icon-box-title">Free Returns</h3><!-- End .icon-box-title -->
+                                        <p>Within 30 days</p>
+                                    </div><!-- End .icon-box-content -->
+                                </div><!-- End .icon-box -->
+                            </div><!-- End .col-sm-6 col-lg-3 -->
+
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="icon-box icon-box-side">
+                                    <span class="icon-box-icon">
+                                        <i class="icon-info-circle"></i>
+                                    </span>
+
+                                    <div class="icon-box-content">
+                                        <h3 class="icon-box-title">Get 20% Off 1 Item</h3><!-- End .icon-box-title -->
+                                        <p>When you sign up</p>
+                                    </div><!-- End .icon-box-content -->
+                                </div><!-- End .icon-box -->
+                            </div><!-- End .col-sm-6 col-lg-3 -->
+
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="icon-box icon-box-side">
+                                    <span class="icon-box-icon">
+                                        <i class="icon-life-ring"></i>
+                                    </span>
+
+                                    <div class="icon-box-content">
+                                        <h3 class="icon-box-title">We Support</h3><!-- End .icon-box-title -->
+                                        <p>24/7 amazing services</p>
+                                    </div><!-- End .icon-box-content -->
+                                </div><!-- End .icon-box -->
+                            </div><!-- End .col-sm-6 col-lg-3 -->
+                        </div><!-- End .row -->
+                    </div><!-- End .container -->
+                </div><!-- End .icon-boxes-container -->
+            </div><!-- End .bg-lighter -->
+
+
+<center><img src="https://i.imgur.com/rb26yM6.png" width="100%"/></center>
+
+
+
+<div id="side-popup" class="fade-in">
+  <img src="https://wallpapercave.com/wp/wp6663778.jpg"> 
+  <p>
+    Welcome Back
+    <a href="index.html">Shrutika.</a> <button class="buttonz">Tap Me For Voice Assist</button>
+    
+  
+
+  </p>
+  <span id="side-popup-close"></span>
+</div>
+    <p id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></p>
+<script>
+(function() {
+  $('#side-popup-close').on('click', function() {
+    return $('#side-popup').addClass("fade-out");
+  });
+
+}).call(this);
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiPGFub255bW91cz4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFBQSxDQUFBLENBQUUsbUJBQUYsQ0FBc0IsQ0FBQyxFQUF2QixDQUEwQixPQUExQixFQUFtQyxRQUFBLENBQUEsQ0FBQTtXQUMvQixDQUFBLENBQUUsYUFBRixDQUFnQixDQUFDLFFBQWpCLENBQTBCLFVBQTFCO0VBRCtCLENBQW5DO0FBQUEiLCJzb3VyY2VzQ29udGVudCI6WyIkKCcjc2lkZS1wb3B1cC1jbG9zZScpLm9uKCdjbGljaycsIC0+IFxuICAgICQoJyNzaWRlLXBvcHVwJykuYWRkQ2xhc3MoXCJmYWRlLW91dFwiKVxuKVxuICAiXX0=
+//# sourceURL=coffeescript
+</script>
+  <script>
+  // Check if API is supported
+if (
+  "SpeechRecognition" in window ||
+  "webkitSpeechRecognition" in window ||
+  "mozSpeechRecognition" in window ||
+  "msSpeechRecognition" in window
+) {
+  // speech recognition API supported
+  var recognition = new (window.SpeechRecognition ||
+    window.webkitSpeechRecognition ||
+    window.mozSpeechRecognition ||
+    window.msSpeechRecognition)();
+} else {
+  // speech recognition API not supported
+  console.error("Sorry, Speech Recognition is not supported in your browser.");
+  document.querySelector(".error").style.display = "block";
+  document.querySelector(".start").style.display = "none";
+}
+
+// Speech Recognition config
+recognition.continuous = true;
+
+// On recognize event
+recognition.onresult = event => {
+  const speechToText = event.results[event.results.length - 1][0];
+  console.log(`${speechToText.transcript} - ${speechToText.confidence}`);
+
+  let text = speechToText.transcript;
+
+  document.querySelector(".command").innerHTML = text;
+
+  // Commands
+  if (
+    text.indexOf("what is your name") >= 0 ||
+    text.indexOf("what's your name") >= 0
+  ) {
+    //   Name
+    speak("My name is Fortune Bot. What is your name?");
+  } else if (text.indexOf("search for") >= 0) {
+    //   Search
+
+    // takeout the search term from string
+    let q = text.substr(text.indexOf("for") + 3);
+    console.log(q);
+
+    speak(`Searching for ${q} on Google`);
+    window.open(`https://google.com/search?q=${q}`);
+  } else if (
+    text.indexOf("what time is it") >= 0 ||
+    text.indexOf("what's the time") >= 0
+  ) {
+    // time
+    let t = currentTime();
+    speak(t);
+  } else if (text.indexOf("my name is") >= 0) {
+    //   Greetings
+
+    let name = text.substr(text.indexOf("is") + 2); // Split name from text
+    speak(`Hello ${name}`);
+  } else if (text.indexOf("show me some rice") >= 0) {
+    //   Creator
+    speak("wait a minute");
+    window.open("https://ikshanamit.000webhostapp.com/index-8.html");
+
+
+
+
+
+
+  } else if (text.indexOf("bro") >= 0) {
+    //   Creator
+    speak("yea bro");
+    window.open("https://ikshanamit.000webhostapp.com/index-8.html");
+    
+    
+  } else if (text.indexOf("who is your creator") >= 0) {
+    //   Creator
+    speak("its pranav satav");
+   
+    
+    
+    
+    
+    
+    
+    
+    
+  } else if (text.indexOf("who is your favourite YouTube creator") >= 0) {
+    // Youtube Channel
+    speak(
+      "Brad Traversy is my favourite, also there is a new creator named Florin Pop, he also makes some nice videos,  do check it out."
+    );
+  } else if (text.indexOf("bye") >= 0) {
+    // Good bye
+    speak("Good Bye, Have a great day!");
+  } else if (
+    text.indexOf("fuck off") >= 0 ||
+    text.indexOf("sue you") >= 0 ||
+    text.indexOf("bitch") >= 0 ||
+    text.indexOf("bastard") >= 0 ||
+    text.indexOf("asshole") >= 0
+  ) {
+    //   Abusing
+    speak(`Don't be rude`);
+  } else {
+    //   None of the above
+    speak(`Sorry, I can't recognize that`);
+  }
+};
+
+// Declaring elements
+const start = document.querySelector(".start"),
+  main = document.querySelector(".container"),
+  icon = document.querySelector(".fa-microphone");
+
+start.addEventListener("click", function() {
+  // Show bot
+  main.style.display = "flex";
+  this.style.display = "none";
+
+  // Start recognizing
+  recognition.start();
+});
+
+// Returns current time
+function currentTime() {
+  let date = new Date();
+  return `It's ${date.getHours()} ${date.getMinutes()} ${
+    date.getHours() >= 12 ? "PM" : "AM"
+  }`;
+}
+
+// Speak function
+function speak(text) {
+  recognition.stop();
+
+  let msg = new SpeechSynthesisUtterance(text);
+
+  msg.onend = () => {
+    console.log("End..");
+    recognition.start();
+  };
+
+  window.speechSynthesis.speak(msg);
+  return;
+}
+
+// Animating microphone while recording
+recognition.onstart = () => {
+  icon.classList.add("listening");
+};
+recognition.onend = () => {
+  icon.classList.remove("listening");
+};
+
+  </script>
+  
+  <script>
+  $('button').click(function(){
+  $('.pop-up').addClass('open');
+});
+
+$('.pop-up .close').click(function(){
+  $('.pop-up').removeClass('open');
+});
+  </script>
+    <!-- Plugins JS File -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.hoverIntent.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/superfish.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.plugin.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/demos/demo-8.js"></script> </div>
+</body>
+
+</html>
